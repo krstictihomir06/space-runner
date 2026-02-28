@@ -1,5 +1,3 @@
-[app]
-title = Space Runner
 package.name = spacerunner
 package.domain = org.tihomir
 source.dir = .
