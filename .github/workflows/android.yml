@@ -45,10 +45,11 @@ jobs:
           yes | sdkmanager --licenses || true
           sdkmanager "platform-tools" "platforms;android-33" "build-tools;33.0.2"
           yes | sdkmanager --licenses || true
+      
       - name: Build APK
         run: |
+          buildozer android clean
           buildozer -v android debug
-
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
